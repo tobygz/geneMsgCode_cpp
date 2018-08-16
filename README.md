@@ -3,18 +3,18 @@ generate cpp pack &amp; parse code by golang struct reflect
 
 describe proto by golang struct
 ------------------------------------
-type C2s_2000 struct {
-    pid      uint32
-    roomid   uint32
-    data     uint32 `repeat`
-    frameidx uint32 `repeat`
-    name     string
-}
-
-type C2s_2001 struct {
-    lst    C2s_2000 `repeat`
-    single C2s_2000
-}
-
+type C2s_2000 struct {<br>
+    pid      uint32<br>
+    roomid   uint32<br>
+    data     uint32 `repeat`<br>
+    frameidx uint32 `repeat`<br>
+    name     string<br>
+}<br>
+<br>
+type C2s_2001 struct {<br>
+    lst    C2s_2000 `repeat`<br>
+    single C2s_2000<br>
+}<br>
+<br>
 ------------------------------------
 use main.go to generate msg.h&msg.cpp file which contain pack&parse function.
